@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\dev\\crypto\\ethglobal\\202204\\code\\DAOCaster\\contracts\\ERC4824.sol": {
-      "lastModificationDate": 1649410516028,
-      "contentHash": "2db4d33d2bbd5449b868030dff8f4c5a",
+      "lastModificationDate": 1649617277569,
+      "contentHash": "258030610a2082845cc98e63dca8a840",
       "sourceName": "contracts/ERC4824.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -29,9 +29,7 @@
           }
         }
       },
-      "imports": [
-        "hardhat/console.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
         "^0.8.4"
       ],
