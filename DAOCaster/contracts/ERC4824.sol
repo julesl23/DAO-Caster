@@ -8,9 +8,10 @@ pragma solidity ^0.8.4;
 contract ERC4824 {
     event SchemaUpdate(
         address indexed sender,
+        string indexed indexedSchemaURI,
         string name,
         string description,
-        address indexed schemaURI
+        string schemaURI
     );
 
     event DAOUpdate(
@@ -41,6 +42,14 @@ contract ERC4824 {
         string indexed activityId,
         string activityLogURI
     );
+
+    function schemaUpdate(
+        string calldata name,
+        string calldata description,
+        string calldata schemaURI
+    ) public {
+        emit SchemaUpdate(msg.sender, schemaURI, name, description, schemaURI);
+    }
 
     function daoUpdate(
         address dao,
