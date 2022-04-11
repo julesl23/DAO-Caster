@@ -6,6 +6,13 @@ pragma solidity ^0.8.4;
 // is used to retrieve emitted events across different Ethereum compatible blockchains.
 // By Jules Lai and thanks to thelastjosh and Asgeir from the Ethereum Magicians forum
 contract ERC4824 {
+    event SchemaUpdate(
+        address indexed sender,
+        string name,
+        string description,
+        address indexed schemaURI
+    );
+
     event DAOUpdate(
         address indexed sender,
         address indexed dao,
