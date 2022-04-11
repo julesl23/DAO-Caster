@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
+// @notice DAO Caster is a multi-chain smart contract that relays DAO updates securely for discovery and services.
+// Based off of EIP-3722 Poster and ERC-4824. Uses a singleton factory pattern so that the same smart contract address
+// is used to retrieve emitted events across different Ethereum compatible blockchains.
+// By Jules Lai and thanks to thelastjosh and Asgeir from the Ethereum Magicians forum
 contract ERC4824 {
     event DAOUpdate(
         address indexed sender,
